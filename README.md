@@ -1,1 +1,1 @@
-# digit_data_processing
+Fundamentals of the theory and application of digital data processing
