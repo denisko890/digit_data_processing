@@ -28,8 +28,11 @@ while x <= time :
     xs += [x]
     x += 0.000001
 
+
+cos_vals_test = amplitude * math.cos(w * 0.05 + phase) + smeshenie
+print (cos_vals_test)
 plt.plot(xs, cos_vals, color = 'red', linestyle = 'solid',
          label = 'cos(x)')
 
 plt.legend(loc = 'upper right')
-fig.savefig('cosinus5.png')
+fig.savefig('Reports/cosinus5.png')
