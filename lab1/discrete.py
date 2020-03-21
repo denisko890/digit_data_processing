@@ -38,7 +38,7 @@ with discretePoints:
 plt.plot(xs, cos_vals, '.', label = 'Discrete cos(x)')
 
 plt.legend(loc = 'upper right')
-fig.savefig('discrete.png')
+fig.savefig('Reports/discrete.png')
 
 av = sum(cos_vals)/len(cos_vals)
 print(av)
