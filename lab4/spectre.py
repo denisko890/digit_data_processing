@@ -24,7 +24,7 @@ data_sn = [(i["Usn"]) for i in read_csv(data_sn, "lab3/report/9_sn.csv", "Usn")]
 
 fft_signal = np.fft.fft(data_signal)
 freq = np.fft.fftfreq(10000, 0.00001)
-
+freq2 = np.fft.fftfreq(8192, 0.00001)
 data_noise = np.fft.fft(data_noise)
 data_sn = np.fft.fft(data_sn)
 
@@ -63,6 +63,6 @@ plt.xlabel('Частота, Гц')
 plt.ylabel('Напряжение Us, В')
 plt.grid()
 fig.savefig('lab4/Reports/signal_noise.png')
-plt.axis([20973, 22973, - 0.02, 0.55])
+plt.axis([21920, 22020, - 0.02, 0.55])
 fig.savefig('lab4/Reports/signal_noise_5.png')
 plt.close()
